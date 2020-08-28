@@ -35,7 +35,7 @@ $(function () { ///// jQB //////////////////////////////////////////////////////
     
     
     /// 오른쪽버튼 이동하기
-    $(".BbtnL").click(function () {
+    $(".mbtnL").click(function () {
         $(".ban_list").animate({
             left: "-100%"
         }, 400,"easeOutQuint", function () {
@@ -47,7 +47,7 @@ $(function () { ///// jQB //////////////////////////////////////////////////////
     }); //////// click //////////////
 
     /// 왼쪽버튼 이동하기
-    $(".BbtnR").click(function () {
+    $(".mbtnR").click(function () {
         $(".ban_list").prepend($(".ban_list>li").last())
             .css({
                 left: "-100%"
