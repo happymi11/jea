@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* core.css - 중요공통기능 */
+
+/*웹폰트*/
+@font-face{
+    font-family: Nanum;
+    src:url(../fonts/NanumGothic.woff) format("woff"),
+        url(../fonts/NanumGothic.ttf) format("trueype")
+}
+@font-face{
+    font-family: Noto Sans KR;
+    src:url(../fonts/NotoSansKR-Bold-Alphabetic.woff) format("woff"),
+        url(../fonts/NotoSansKR-Bold-Alphabetic.ttf) format("trueype")
+}
+/*
+@font-face {
+    font-family: 내가지은 이름;
+    src: url(../fonts/NanumGothic.woff) format("woff"),
+        url(../fonts/NanumGothic.ttf) format("trueype")
+}
+ -woff는 데스크탑 브라우저용 웹폰트 확장자
+ -ttf 는 모바일 브라우저용 웹폰트 확장자
+ -format(형식명) 은 명시적으로 확장자를 지정하여 웹폰트 로딩을 빠르게 함!
+*/
+/*공통*/
+body{
+    font-family: Nanum, "돋움", sans-serif;
+    color:#808080;
+    line-height: 136%;
+    font-size: 12px;
+}
+
+/*공통 class*/
+.col-12 li h1{
+    font-size: 30px;
+    font-weight: 700;
+    color:#333;
+       
+}
+.col-12 li{
+    height:200%;
+}
+
+/*속박스*/
+.page{
+    position: relative;
+    /*부모자격*/
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+/*중앙정렬 속박스*/
+.inbox{
+    width: 1440px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*중앙정렬 속박스*/
+.page .inbox{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*중앙정렬 속박스*/
+.ban .inbox,.info .inbox{
+    position: static;
+    top: auto;
+    transform: none;
+}
+
+/*IR(Image Replacement) class*/
+.ir{
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*비율유지 class*/
+.rbx{
+    position: relative;
+}
+.rbx::before{
+    content: "";
+    display: block;
+    padding-top: 70%;
+    /*비율에따라 변경*/
+}
+.ibx{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

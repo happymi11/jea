@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Title" content="천재교육">
+    <meta name="Subject" content="천재교육">
+    <meta name="Keywords" content="천재교육">
+    <meta name="Copyright" content="COPYRIGHT 1981-2019 CHUNJAE EDUCATION INC. ALL RIGHTS RESERVED.
+[인증범위]온라인 교육 및 학습지원 서비스 운영">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="fonts/css/all.css" rel="stylesheet">
+    <title>천재교육</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <!--
+레이아웃 일반
+    1. 2중 박스구조로 큰 레이아웃 구분으로 div를 작성
+    2. 각 파티션을 clo-클래스로 구현
+    3. 각 파트별 타이틀를 달아줌
+    4. 각 파티션을 ul>li로 구성함
+-->
+    <div class="top">
+        <header class="inbox clb" id="top">
+            <ul class="fbx">
+                <li class="col-3" id="main_top_logo">
+                    <h1><a href="#"><span class="ir">로고이미지</span></a></h1>
+                </li>
+                <!--lnb-->
+                <li class="col-7" id="main_lnb">
+                    <nav>
+                        <ul class="main_lnb_ul">
+                            <li><a href="#">회사소개</a>
+                                <ol class="main_lnb_sub">
+                                    <li><a href="#">회사개요</a></li>
+                                    <li><a href="#">인사말</a></li>
+                                    <li><a href="#">연혁</a></li>
+                                    <li><a href="#">경영이념</a></li>
+                                    <li><a href="#">CI</a></li>
+                                    <li><a href="#">오시는길</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">사업영역</a>
+                                <ol class="main_lnb_sub">
+                                    <li><a href="#">교과서</a></li>
+                                    <li><a href="#">참고서</a></li>
+                                    <li><a href="#">스마트 러닝</a></li>
+                                    <li><a href="#">에듀테크</a></li>
+                                    <li><a href="#">출판</a></li>
+                                    <li><a href="#">인쇄/물류</a></li>
+                                    <li><a href="#">학원/프랜차이즈</a></li>
+                                    <li><a href="#">캐릭터</a></li>
+                                    <li><a href="#">건설</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">사회공헌</a>
+                                <ol class="main_lnb_sub">
+                                    <li><a href="#">학습봉사</a></li>
+                                    <li><a href="#">지역사회후원</a></li>
+                                    <li><a href="#">학회지원</a></li>
+                                    <li><a href="#">공교육지원</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">홍보</a>
+                                <ol class="main_lnb_sub">
+                                    <li><a href="#">언론보도</a></li>
+                                    <li><a href="#">SNS</a></li>
+                                    <li><a href="#">광고</a></li>
+                                    <li><a href="#">수상</a></li>
+                                    <li><a href="#">천재이야기</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">브랜드</a>
+                                <ol class="main_lnb_sub">
+                                    <li><a href="#">브랜드소개</a></li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+                <!--gnb-->
+                <li class="col-2" id="main_gnb">
+                    <ul class="main_gnb">
+                        <li><a href="#" class="btn_lang">KR ^</a></li>
+                        <li><a href="#">교재</a></li>
+                        <li><a href="#">쇼핑몰</a></li>
+                        <li><a href="#">채용</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+    </div>
+    <div class="page ban">
+        <div class="inbox clb" id="ban">
+            <ul class="fbx">
+                <li class="col-12 bh1">
+                    <ol class="ban_list">
+                        <li class="ban_text do">
+                            <p>교육에 대한 끊임없는 도전</p>
+                            <strong>행복한 내일을 함께합니다.</strong>
+                        </li>
+                        <li class="ban_text it">
+                            <p>나눔의 힘! 실천의 힘</p>
+                            <strong>작은 따듯함으로 세상을 바꿉니다.</strong>
+                        </li>
+                        <li class="ban_text con">
+                            <p>편리한 학습 방법</p>
+                            <strong>개인이 가진 고유의 가능성을 발견</strong>
+                        </li>
+                    </ol>
+                </li>
+                <li class="col-12 bh2 bmenu">
+                    <div id="btn_biz">
+                        <ol class="btn_biz bizBox">
+                            <li>
+                                <a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>01</span> SMART LEARNING
+                                        </div>
+                                        <i class="fas fa-chevron-right"></i>
+                                        <p>스마트러닝</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social03.png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>02</span> REFERENCE BOOK</div>
+                                        <p>참고서</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social02.png">
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>03</span> TEXT BOOK</div>
+                                        <p>교과서</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social01.png">
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>04</span> ACADEMY/FRANCHISE</div>
+                                        <p>학원/프렌차이즈</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social08.png">
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>05</span> CHARACTER</div>
+                                        <p>캐릭터</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social09.png">
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>06</span> EDUTECH</div>
+                                        <p>에듀테크</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social06.png">
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>07</span> PUBLICATION</div>
+                                        <p>출판</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social07.png">
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>08</span> PRINT/LOSGISTICS</div>
+                                        <p>인쇄/물류</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social05.png">
+                                    </div>
+                                </a></li>
+                            <li><a href="#">
+                                    <div class="btn_biz">
+                                        <div class="btn_biz_tit"><span>09</span> CONSTRUCTION</div>
+                                        <p>건설</p>
+                                    </div>
+                                    <div class="btn_biz_img">
+                                        <img src="images/mob/img_list_social10.png">
+                                    </div>
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </li>
+            </ul>
+            <!--사업영역 흐르기 버튼-->
+            <div class="manu_arrow_btn">
+                <a href=""><span class="arrowL" style="font-size: 2em; color:#fff;"><i class="fas fa-arrow-left"></i></span></a>
+                <a href=""><span class="arrowR" style="font-size: 2em; color:#fff;">
+                        <i class="fas fa-arrow-right"></i></span></a>
+                <!-- <img src="images/btn_scroll_down.png">-->
+            </div>
+
+        </div>
+        <!--.inbox-->
+
+        <!--양쪽 화살표버튼-->
+        <div class="ban_arrow_btn">
+            <a href=""><span class="BbtnL" style="font-size: 5em; color:#fff;">
+                    <i class="fas fa-chevron-left"></i> </span></a>
+            <a href=""><span class="BbtnR" style="font-size: 5em; color:#fff;">
+                    <i class="fas fa-chevron-right"></i>
+                </span></a>
+        </div>
+    </div>
+    <!--.ban-->
+    <div class="page cont_1">
+        <section class="inbox clb" id="cont_1">
+            <ul class="fbx">
+                <li class="col-12 ch1">
+                    <h2 class="main_title">천재 NOW</h2>
+                    <h4 class="sub_title">교육 서비스·출판에서 인쇄까지! 대한민국의 미래를 만들어 갑니다.</h4>
+                </li>
+                <li class="col-4 ch2">
+                    <div class="main_biz">
+                        <a href="#">
+                            <div class="biz_smart_text">
+                                <span style="font-size: 10em; color: Mediumslateblue;">
+                                    <i class="fas fa-tablet-alt"></i>
+                                </span>
+                                <!--<svg class="c1" height="5" width="50">
+  <line x1="0" y1="0" x2="50" y2="0" style="stroke:rgb(255,0,0);stroke-width:3"/>
+</svg>-->
+                                <strong>스마트러닝 체험 이벤트</strong>
+                                <p>우리아이, 학습공백은 걱정되는데...
+                                    안심하고 맡길 수있는 학습 어디없을까?</p>
+
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-4 ch2">
+                    <div class="main_biz">
+                        <a href="#">
+                            <div class="biz_smart_text">
+                                <span style="font-size: 10em; color: Tomato;">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </span>
+                                <strong>우리 공부 안심맞춤</strong>
+                                <p>화상관리 서비스, 자기 주도 학습:진도부터 습관까지 꼼꼼하게 관리받습니다.</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-4 ch2">
+                    <div class="main_biz">
+                        <a href="#">
+                            <div class="biz_smart_text">
+                                <span style="font-size: 10em; color: Dodgerblue;">
+                                    <i class="fas fa-print"></i>
+                                </span>
+                                <strong>SNS 팔로우 어때요?</strong>
+                                <p>공부, 자기계발 관심있으면 팔로우 누르고! 함께 학습해요</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <!--<li class="col-3 ch2">
+                    <i class="fas fa-print"></i>
+                </li>-->
+            </ul>
+        </section>
+    </div>
+    <div class="page cont_2">
+        <section class="inbox" id="cont_2">
+            <ul class="fbx">
+                <li class="col-12 ch1">
+                    <h2 class="main_title">사회공헌</h2>
+                    <h4 class="sub_title">천재교육은 기업과 사회, 환경이 공존하는 아름다운 세상을 꿈꾸고 있습니다.</h4>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="social_1 a">
+                        <p>아이들에게 용기와 희망을 전하는</p>
+                        <strong>학습봉사</strong>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="social_1 b">
+                        <p>모두가 행복한 세상을 위한</p>
+                        <strong>지역사회 후원</strong>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="social_1 c">
+                        <p>미래교육발전을 위한 동행하는</p>
+                        <strong>학회지원</strong>
+                        <span></span>
+                    </div>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="social_1 d">
+                        <p>배움의 기회를 통해 꿈을 키우는</p>
+                        <strong>공교육 지원</strong>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="page cont_3">
+        <div class="inbox" id="cont_3">
+            <div>
+                <h2 class="main_title">미디어</h2>
+                <h4 class="sub_title">천재교육의 보도자료와 SNS 콘텐츠를 소개합니다.</h4>
+            </div>
+            <div class="mslide">
+                <ul class="fbx mlst">
+                    <li class="col-3 ch2">
+                        <div class="media_1">
+                            <a href="#">
+                                <img src="images/media_1.png" class="media_1_img">
+                                <div class="media_text">
+                                    <strong>심슨가족과 배워보는 영어표현</strong>
+                                    <img src="images/ico_media_youtube.png"><span>2020.07.17</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_2">
+                            <a href="#">
+                                <img src="images/media_3.png" class="media_2_img">
+                                <div class="media_text">
+                                    <strong>우리아이 숫자공부 숫자놀이로 재미있게 해봐요!</strong>
+                                    <img src="images/ico_media_blog.png"><span>2020.07.20</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_3">
+                            <a href="#">
+                                <img src="images/media_4.png" class="media_2_img">
+                                <div class="media_text">
+                                    <strong>우리조상들은 더위를 어떻게 이겨냈을까?</strong>
+                                    <img src="images/ico_media_blog.png"><span>2020.08.05</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_3">
+                            <a href="#">
+                                <img src="images/media_2.png" class="media_2_img">
+                                <div class="media_text">
+                                    <strong>국경일 중 하나인 7.17 제헌절을 맞아 알아보는 세계 각국 이색 법률</strong>
+                                    <img src="images/ico_media_blog.png"><span>2020.08.05</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_1">
+                            <a href="#">
+                                <img src="images/해법문학Q.jpg" class="media_1_img">
+                                <div class="media_text">
+                                    <strong>따끈한 신간 해법문학Q, 천재TV 구독하고 내꺼하자!</strong>
+                                    <img src="images/ico_media_youtube.png"><span>2020.08.14</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_2">
+                            <a href="#">
+                                <img src="images/공휴일-차이.jpg" class="media_2_img">
+                                <div class="media_text">
+                                    <strong>임시공휴일과 대체공휴일 어떤 차이가 있을까요?</strong>
+                                    <img src="images/ico_media_blog.png"><span>2020.08.14</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_3">
+                            <a href="#">
+                                <img src="images/라디오고민상담소.jpg" class="media_2_img">
+                                <div class="media_text">
+                                    <strong> 문제 못 읽는 아이를 위한 똑똑한 해법 1부</strong>
+                                    <img src="images/ico_media_blog.png"><span>2020.08.12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-3 ch2">
+                        <div class="media_3">
+                            <a href="#">
+                                <img src="images/초등-학부모를-찾습니다.jpg" class="media_2_img">
+                                <div class="media_text">
+                                    <strong>당신의 학습 고민을 싹쓸이 해드리기 위해 만났습니다!</strong>
+                                    <img src="images/ico_media_instagram.png"><span>2020.08.10</span>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="media_btn">
+                <a class="mbtnR" href="#">
+                    <span style="font-size: 3rem; color: #333;"><i class="fas fa-caret-square-right"></i>
+                    </span></a>
+                <a class="mbtnL" style="font-size: 3rem; color: #333;" href="#">
+                    <span style="font-size: 3rem; color: #333;"><i class="fas fa-caret-square-left"></i></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page cont_4">
+        <div class="inbox" id="cont_4">
+            <ul class="fbx">
+                <li class="col-12 ch1">
+                    <h2 class="main_title">인재채용</h2>
+                    <h4 class="sub_title">‘최고의 전문가’로 성장하고 ‘행복한 삶’을 누릴 수 있도록 지원합니다.</h4>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="saram saram_1">
+                        <a href="#">
+                            <div><img src="images/employ_ico01.png" class="saram_card">
+                            </div>
+                            <strong>인재상 <i class="fas fa-angle-right"></i></strong>
+                            <p>사람을 아끼고 키우는 회사</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="saram saram_2">
+                        <a href="#">
+                            <div><img src="images/employ_ico02.png" class="saram_hart">
+                            </div>
+                            <strong>복리후생 <i class="fas fa-angle-right"></i></strong>
+                            <p>Work & Life Balance를 지원</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="saram saram_3">
+                        <a href="#">
+                            <div class="saram_btn">경력</div>
+                            <strong>IT 개발 및 운영 담당자 모집</strong>
+                            <p>2020-07-17 ~ 2020-07-31</p>
+                        </a>
+                    </div>
+                </li>
+                <li class="col-3 ch2">
+                    <div class="saram saram_4">
+                        <a href="#">
+                            <div class="saram_btn a">신입</div>
+                            <strong>도서몰 운영 담당자 모집</strong>
+                            <p>2020-07-08 ~ 2020-08-15</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            <!--<ul class="saram_btn_na">
+                <li><a href="#" class="active"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>-->
+        </div>
+    </div>
+
+    <!--블릿네비게이션-->
+    <ol id="bnavi">
+        <li class="on">
+            <a href="#page1">
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="#page2">
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="#page3">
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="#page4">
+                <span></span>
+            </a>
+        </li>
+        <li>
+            <a href="#page5">
+                <span></span>
+            </a>
+        </li>
+    </ol>
+
+    <div class="page info">
+        <div class="inbox clb" id="info">
+            <ul class="fbx">
+                <li class="col-12 ih1">
+                    <div class="info_logo">
+                        <img src="images/bg_logo_footer.png" alt="하단로고">
+                    </div>
+                    <ul class="info_mail">
+                        <li><a href="#">제휴문의</a></li>
+                        <li>|</li>
+                        <li><a href="#">이메일 무단 수집거부</a></li>
+                    </ul>
+                    <div class="info_sns">
+                        <img src="images/ico_foot_sns.png" class="info_sns">
+                    </div>
+                </li>
+                <li class="col-12 ih2">
+                    <footer>
+                        (주)천재교육
+                        서울시 금천구 가산로9길 54
+                        대표자 오병목
+                        사업자등록번호 119-81-19350
+                        통신판매신고번호 제18-439호
+                        부가통신사업신고 016712
+                        <span>천재교육 1577-0902
+                            월간우등생학습 1577-6226
+                            밀크T초등 1577-1533
+                            밀크T중학 1522-5533</span>
+                        <small>COPYRIGHT 1981-2019 CHUNJAE EDUCATION INC. ALL RIGHTS RESERVED.</small>
+                    </footer>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <!--전체 네비 블릿버튼-->
+
+    <div class="tot_nav">
+        <aside>
+            <ul class="main_aside">
+                <li><a href="#" class=""></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </aside>
+    </div>
+
+
+
+
+
+    <!-- 검수용 완성 이미지-->
+    <img src="images/main_copy.jpg" class="vi">
+
+    <!--그리드 뷰-->
+    <ul class="grid">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>
